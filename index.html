@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Needs To Be Done</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div>
+            <img src="assets/Images/Logo.png" />
+        </div>
+        <div class="buttons">
+            <div class="header_div1">
+                <a>
+                    Jobs
+                </a>
+                <a>
+                    Join as owner
+                </a>
+
+                <a>
+                    Join as worker
+                </a>
+            </div>
+            <div class="header_div2">
+                <input class="header_input" type="text" placeholder="Search Jobs here...." /><img class="header_img"
+                    alt="searchIcon" src="assets/Images/Search-icon.png" />
+            </div>
+            <a>
+                Log In
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Top Jobs -->
+        <section>
+            <section class="Top_Jobs scrollmenu">
+                <div class="TJ-Heading">Top Jobs</div>
+
+                <!-- <div class="Job-Card">
+                <div class="job-head">
+                    <div class="head_div1">
+                        <div class="job-image"><img src="assets/Images/UX.jfif" alt="UX- Image" /> </div>
+                        <div class="Job-Title">
+                            UsereXperience Designer
+                        </div>
+                    </div>
+                    <div class="like">
+                        <img src="assets/Images/heart.svg" alt="heart-img" />
+                    </div>
+                </div>
+
+                <div class="Price">
+                    Rs.1lakh to Rs.3lakhs
+                </div>
+
+                <div class="worktype">
+                    <div class="FT">
+                        Full Time
+                    </div>
+
+                    <div class="PT">
+                        Part Time
+                    </div>
+
+
+
+                </div>
+
+                <div class="job-video">
+
+                </div>
+
+                <div class="ActivityBar">
+                    <div class="ago">
+                        10 days Ago
+                    </div>
+
+                    <div class="Apply">
+                        Apply Now
+                    </div>
+                </div>
+
+            </div> -->
+
+                <div>
+
+                </div>
+            </section>
+
+
+            <!-- Trending Jobs -->
+            <section class="Trending_Jobs scrollmenu">
+                <div class="TJ-Heading">Trending Jobs</div>
+
+
+            </section>
+
+            <!-- Top workers -->
+
+            <section>
+                <div>
+
+                </div>
+            </section>
+
+        </section>
+
+        <div>
+            <div class="card">
+                <img class="card_profile_img" src="assets/Images/user-profile_img_01.avif" alt="User_profile" />
+                <h2>Ms.Ileana citaristi.</h2>
+                <p class="email"> <img src="assets/Images/email.svg" alt="email-logo"> Ileanacitaristi@gmail.com</p>
+                <p class="email"> <img src="assets/Images/phone_new.svg" alt="phone-logo"> +91 9876543210</p>
+                <p class="email"> <img src="assets/Images/location.svg" alt="location-logo"> chennai</p>
+                <p class="review"> Rreview </p>
+
+                <p><img src="assets/Images/star.svg" />
+                    <img src="assets/Images/star.svg" />
+                    <img src="assets/Images/star.svg" />
+                    <img src="assets/Images/star.svg" />
+                    <img src="assets/Images/star.svg" />
+                </p>
+
+
+
+            </div>
+
+            <div class="card_details">
+                <p class="education">Education : B.tech</p>
+                <h2 class="domains">Domains:</h2>
+                <h4>Web Development</h4>
+                <h4>Web Designer</h4>
+                <h4>Comments</h4>
+
+                <button>contact</button>
+
+
+
+            </div>
+
+        </div>
+    </main>
+
+
+    <script>
+
+
+        let top_jobs = [{
+            image: {
+                "image": "assets/Images/UX.jfif",
+                "alt": "UX- Image"
+            },
+            title: "UsereXperience Designer",
+            price_one: "1lakh ",
+            price_two: "3lakhs",
+            video: "https://www.youtube.com/embed/SRec90j6lTY",
+            heart_image: {
+                "image": "assets/Images/heart.svg",
+                "alt": "image"
+            },
+            days_ago: 20,
+        },
+        {
+            image: {
+                "image": "assets/Images/frontend.svg",
+                "alt": "Image"
+            },
+            title: "FrontEnd Development",
+            price_one: "2lakh ",
+            price_two: "5akhs",
+            video: "https://www.youtube.com/embed/-_X6PhkjpzU",
+            heart_image: {
+                "image": "assets/Images/heart.svg",
+                "alt": "heart_image"
+            },
+            days_ago: 10,
+        },
+        {
+            image: {
+                "image": "assets/Images/backend.svg",
+                "alt": "Image"
+            },
+            title: "BackEnd web Development",
+            price_one: "1lakh ",
+            price_two: "3lakhs",
+            video: "https://www.youtube.com/embed/cbSrsYiRamo",
+            heart_image: {
+                "image": "assets/Images/heart.svg",
+                "alt": "heart_image"
+            },
+            days_ago: 5,
+        },
+
+
+        {
+            image: {
+                "image": "assets/Images/plumber.svg",
+                "alt": "Image"
+            },
+            title: "Plumber",
+            price_one: "2lakh ",
+            price_two: "3lakhs",
+            video: "https://www.youtube.com/embed/8jxRn-T_LCs",
+            heart_image: {
+                "image": "assets/Images/heart.svg",
+                "alt": "heart_image"
+            },
+            days_ago: 2,
+        },
+
+
+
+        {
+            image: {
+                "image": "assets/Images/farmer.svg",
+                "alt": "UX- Image"
+            },
+            title: "Farming",
+            price_one: "1lakh ",
+            price_two: "3lakhs",
+            video: "https://www.youtube.com/embed/8t_ZfpMtjzg",
+            heart_image: {
+                "image": "assets/Images/heart.svg",
+                "alt": "heart_image"
+            },
+            days_ago: 10,
+        },
+
+
+        {
+            image: {
+                "image": "assets/Images/electrician.svg",
+                "alt": "Image"
+            },
+            title: "Electrician",
+            price_one: "400",
+            price_two: "1k",
+            video: "https://www.youtube.com/embed/TMFO61oKXKo",
+            heart_image: {
+                "image": "assets/Images/heart.svg",
+                "alt": "heart_image"
+            },
+            days_ago: 10,
+        },
+
+
+        ]
+
+        let Trending_Jobs = [
+            {
+                image: {
+                    "image": "assets/Images/UX.jfif",
+                    "alt": "UX- Image"
+                },
+                title: "UsereXperience Designer",
+                price_one: "1lakh ",
+                price_two: "3lakhs",
+                video: "https://www.youtube.com/embed/SRec90j6lTY",
+                heart_image: {
+                    "image": "assets/Images/heart.svg",
+                    "alt": "image"
+                },
+                days_ago: 20,
+            }, {
+                image: {
+                    "image": "assets/Images/electrician.svg",
+                    "alt": "Image"
+                },
+                title: "Electrician",
+                price_one: "400",
+                price_two: "1k",
+                video: "https://www.youtube.com/embed/TMFO61oKXKo",
+                heart_image: {
+                    "image": "assets/Images/heart.svg",
+                    "alt": "heart_image"
+                },
+                days_ago: 10,
+            },
+            {
+                image: {
+                    "image": "assets/Images/frontend.svg",
+                    "alt": "Image"
+                },
+                title: "FrontEnd Development",
+                price_one: "2lakh ",
+                price_two: "5akhs",
+                video: "https://www.youtube.com/embed/-_X6PhkjpzU",
+                heart_image: {
+                    "image": "assets/Images/heart.svg",
+                    "alt": "heart_image"
+                },
+                days_ago: 10,
+            },
+            {
+                image: {
+                    "image": "assets/Images/backend.svg",
+                    "alt": "Image"
+                },
+                title: "BackEnd web Development",
+                price_one: "1lakh ",
+                price_two: "3lakhs",
+                video: "https://www.youtube.com/embed/cbSrsYiRamo",
+                heart_image: {
+                    "image": "assets/Images/heart.svg",
+                    "alt": "heart_image"
+                },
+                days_ago: 5,
+            },
+
+
+            {
+                image: {
+                    "image": "assets/Images/plumber.svg",
+                    "alt": "Image"
+                },
+                title: "Plumber",
+                price_one: "2lakh ",
+                price_two: "3lakhs",
+                video: "https://www.youtube.com/embed/8jxRn-T_LCs",
+                heart_image: {
+                    "image": "assets/Images/heart.svg",
+                    "alt": "heart_image"
+                },
+                days_ago: 2,
+            },
+
+
+
+            {
+                image: {
+                    "image": "assets/Images/farmer.svg",
+                    "alt": "UX- Image"
+                },
+                title: "Farming",
+                price_one: "1lakh ",
+                price_two: "3lakhs",
+                video: "https://www.youtube.com/embed/8t_ZfpMtjzg",
+                heart_image: {
+                    "image": "assets/Images/heart.svg",
+                    "alt": "heart_image"
+                },
+                days_ago: 10,
+            },
+
+
+
+        ]
+
+        for (let i = 0; i < top_jobs.length; i++) {
+            let JobCard = document.createElement("div");
+            JobCard.setAttribute("class", "Job-Card");
+            JobCard.setAttribute("class", "scrollmenu_a");
+
+            let jobhead = document.createElement("div");
+            jobhead.setAttribute("class", "job-head")
+            JobCard.append(jobhead);
+
+            let head_div1 = document.createElement("div");
+            head_div1.setAttribute("class", "head_div1");
+            jobhead.append(head_div1);
+
+            let jobimage = document.createElement("div");
+            jobimage.setAttribute("class", "job-image");
+            head_div1.append(jobimage);
+
+            let jobimage_img = document.createElement("img");
+            jobimage_img.setAttribute("src", top_jobs[i]["image"]["image"]);
+            jobimage_img.setAttribute("alt", top_jobs[i]["image"]["alt"]);
+            jobimage.append(jobimage_img);
+
+            let JobTitle = document.createElement("div");
+            JobTitle.setAttribute("class", "Job-Title");
+            JobTitle.innerText = top_jobs[i]["title"];
+            head_div1.append(JobTitle);
+
+            let like = document.createElement("div");
+            like.setAttribute("class", "like");
+            jobhead.append(like);
+
+            let like_img = document.createElement("img");
+            like_img.setAttribute("src", "assets/Images/heart.svg");
+            like_img.setAttribute("alt", "heart-img");
+            like.append(like_img);
+
+
+            let Price = document.createElement("div");
+            Price.setAttribute("class", "Price");
+            Price.innerText = `Rs. ${top_jobs[i]["price_one"]} to Rs. ${top_jobs[i]["price_two"]}`;
+            JobCard.append(Price);
+
+            let worktype = document.createElement("div");
+            worktype.setAttribute("class", "worktype");
+            JobCard.append(worktype);
+
+            let FT = document.createElement("div");
+            FT.setAttribute("class", "FT");
+            FT.innerText = "FullTime";
+            worktype.append(FT);
+
+            let PT = document.createElement("div");
+            PT.setAttribute("class", "PT");
+            PT.innerText = "PartTime";
+            worktype.append(PT);
+
+
+            let job_video = document.createElement("div");
+            job_video.setAttribute("class", "job-video");
+            JobCard.append(job_video);
+
+            // let job_video_iframe = document.createElement("iframe");
+            // job_video_iframe.setAttribute("class", "job-video");
+            // job_video_iframe.setAttribute("width", "560");
+            // job_video_iframe.setAttribute("height", "315");
+            // job_video_iframe.setAttribute("src", "https://www.youtube.com/embed/SRec90j6lTY");
+            // job_video_iframe.setAttribute("title", "YouTube video player");
+            // job_video_iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+            // job_video_iframe.setAttribute("allowfullscreen");
+            // job_video.append(job_video_iframe)
+
+
+
+            job_video.innerHTML = `<iframe class="job-video" width="560" height="315" src=${top_jobs[i]["video"]} title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe >`;
+
+
+
+            let ActivityBar = document.createElement("div");
+            ActivityBar.setAttribute("class", "ActivityBar");
+            JobCard.append(ActivityBar);
+
+            let ago = document.createElement("div");
+            ago.setAttribute("class", "ago");
+            ago.innerText = `${top_jobs[i]["days_ago"]} days ago`;
+            ActivityBar.append(ago);
+
+            let apply = document.createElement("div");
+            apply.setAttribute("class", "Apply");
+            apply.innerText = "Apply Now"
+            ActivityBar.append(apply);
+
+            document.querySelector('.Top_Jobs').append(JobCard);
+
+
+
+        }
+
+        for (let i = 0; i < top_jobs.length; i++) {
+            let JobCard = document.createElement("div");
+            JobCard.setAttribute("class", "Job-Card");
+            JobCard.setAttribute("class", "scrollmenu_a");
+
+            let jobhead = document.createElement("div");
+            jobhead.setAttribute("class", "job-head")
+            JobCard.append(jobhead);
+
+            let head_div1 = document.createElement("div");
+            head_div1.setAttribute("class", "head_div1");
+            jobhead.append(head_div1);
+
+            let jobimage = document.createElement("div");
+            jobimage.setAttribute("class", "job-image");
+            head_div1.append(jobimage);
+
+            let jobimage_img = document.createElement("img");
+            jobimage_img.setAttribute("src", top_jobs[i]["image"]["image"]);
+            jobimage_img.setAttribute("alt", top_jobs[i]["image"]["alt"]);
+            jobimage.append(jobimage_img);
+
+            let JobTitle = document.createElement("div");
+            JobTitle.setAttribute("class", "Job-Title");
+            JobTitle.innerText = top_jobs[i]["title"];
+            head_div1.append(JobTitle);
+
+            let like = document.createElement("div");
+            like.setAttribute("class", "like");
+            jobhead.append(like);
+
+            let like_img = document.createElement("img");
+            like_img.setAttribute("src", "assets/Images/heart.svg");
+            like_img.setAttribute("alt", "heart-img");
+            like.append(like_img);
+
+
+            let Price = document.createElement("div");
+            Price.setAttribute("class", "Price");
+            Price.innerText = `Rs. ${top_jobs[i]["price_one"]} to Rs. ${top_jobs[i]["price_two"]}`;
+            JobCard.append(Price);
+
+            let worktype = document.createElement("div");
+            worktype.setAttribute("class", "worktype");
+            JobCard.append(worktype);
+
+            let FT = document.createElement("div");
+            FT.setAttribute("class", "FT");
+            FT.innerText = "FullTime";
+            worktype.append(FT);
+
+            let PT = document.createElement("div");
+            PT.setAttribute("class", "PT");
+            PT.innerText = "PartTime";
+            worktype.append(PT);
+
+
+            let job_video = document.createElement("div");
+            job_video.setAttribute("class", "job-video");
+            JobCard.append(job_video);
+
+            // let job_video_iframe = document.createElement("iframe");
+            // job_video_iframe.setAttribute("class", "job-video");
+            // job_video_iframe.setAttribute("width", "560");
+            // job_video_iframe.setAttribute("height", "315");
+            // job_video_iframe.setAttribute("src", "https://www.youtube.com/embed/SRec90j6lTY");
+            // job_video_iframe.setAttribute("title", "YouTube video player");
+            // job_video_iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+            // job_video_iframe.setAttribute("allowfullscreen");
+            // job_video.append(job_video_iframe)
+
+
+
+            job_video.innerHTML = `<iframe class="job-video" width="560" height="315" src=${top_jobs[i]["video"]} title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe >`;
+
+
+
+            let ActivityBar = document.createElement("div");
+            ActivityBar.setAttribute("class", "ActivityBar");
+            JobCard.append(ActivityBar);
+
+            let ago = document.createElement("div");
+            ago.setAttribute("class", "ago");
+            ago.innerText = `${top_jobs[i]["days_ago"]} days ago`;
+            ActivityBar.append(ago);
+
+            let apply = document.createElement("div");
+            apply.setAttribute("class", "Apply");
+            apply.innerText = "Apply Now"
+            ActivityBar.append(apply);
+
+            document.querySelector('.Trending_Jobs').append(JobCard);
+
+
+
+        }
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
