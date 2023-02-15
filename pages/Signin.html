@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="../assets/css/Signin.css">
+</head>
+<!-- This is sign in -->
+
+<body>
+    <section>
+        <div>
+            <img alt="image" src="../assets/Images/signin_Background.webp" />
+        </div>
+        <div class="signin">
+            <div>
+                <marquee scrollamount="10" behavior="alternate">
+                    <h1>Welcome Back</h1>
+                </marquee>
+                <h3>Sign In</h3>
+
+
+                <form id="form">
+                    <label class="tag">Email Id</label><br>
+                    <input type="text" id="Email" placeholder="Enter Email" /><br>
+
+                    <label>Password</label><br>
+                    <input type="text" id="Password" placeholder="Enter Password" /><br>
+
+                    <button class="btn1" type="submit">Sign In</button><br>
+                    <button class="btn2">Cancel</button><br>
+                    <p>Or</p><br>
+                    <button class="btn3">Sign In with Google</button><br>
+                    <button class="btn4">Sign In with Facebook</button><br>
+
+
+
+
+
+
+
+
+
+
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+        let logIn = document.getElementById("form");
+
+        logIn.addEventListener("submit", (event) => {
+
+
+            event.preventDefault();
+            let defaultData = JSON.parse(localStorage.getItem("register"));
+            console.log(defaultData)
+            let Email = document.getElementById("Email").value.toLowerCase();
+            let Password = document.getElementById("Password").value;
+
+            let match = false;
+
+            for (let i = 0; i < defaultData.length; i++) {
+                if (Email == defaultData[i].Email && Password == defaultData[i].Password) {
+                    match = true
+                    break;
+                    // i = i + defaultData.length;
+                }
+                else {
+                    match = false
+                }
+
+            }
+
+
+
+
+            if (match == true) {
+                let arr = [];
+
+                if (localStorage.getItem("Login") != null) {
+                    arr = JSON.parse(localStorage.getItem("Login"))
+                }
+
+                let SuccessLogin = {
+                    "Email": Email,
+                    "password": Password
+                }
+
+                arr.push(SuccessLogin);
+                let str = JSON.stringify(arr);
+                localStorage.setItem("Login", str);
+
+
+
+
+                console.log(SuccessLogin)
+                window.location.href = "OwnerHome.html?from=logIn";
+            }
+            else {
+                alert("Login credentials not correct")
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+        })
+
+
+
+
+
+    </script>
+</body>
+
+</html>
