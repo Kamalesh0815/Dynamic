@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 
 <head>
     <meta charset="UTF-8">
@@ -20,11 +20,11 @@
                 <a>
                     Jobs
                 </a>
-                <a>
+                <a href="pages/Register.html">
                     Join as owner
                 </a>
 
-                <a>
+                <a href="pages/Register.html">
                     Join as worker
                 </a>
             </div>
@@ -32,7 +32,7 @@
                 <input class="header_input" type="text" placeholder="Search Jobs here...." /><img class="header_img"
                     alt="searchIcon" src="assets/Images/Search-icon.png" />
             </div>
-            <a>
+            <a href="pages/Signin.html">
                 Log In
             </a>
         </div>
@@ -41,10 +41,17 @@
     <main>
         <!-- Top Jobs -->
         <section>
-            <section class="Top_Jobs scrollmenu">
-                <div class="TJ-Heading">Top Jobs</div>
+            <section class="all">
+                <div class="left">
+                    <img class="all_arrow_img" src="assets/Images/left.svg" alt="leftButton" onclick="goLeft()" />
+                </div>
 
-                <!-- <div class="Job-Card">
+                <div class="total">
+                    <h2 class="TJ-Heading" id="top_jobs">Top Jobs</h2>
+                    <section class="Top_Jobs scrollmenu">
+
+
+                        <!-- <div class="Job-Card">
                 <div class="job-head">
                     <div class="head_div1">
                         <div class="job-image"><img src="assets/Images/UX.jfif" alt="UX- Image" /> </div>
@@ -90,64 +97,212 @@
 
             </div> -->
 
-                <div>
+                        <div>
+
+                        </div>
+                    </section>
 
                 </div>
+
+                <div class="right">
+                    <img class="all_arrow_img" src="assets/Images/right.svg" alt="right" onclick="goRight()" />
+                </div>
+
             </section>
 
 
             <!-- Trending Jobs -->
-            <section class="Trending_Jobs scrollmenu">
-                <div class="TJ-Heading">Trending Jobs</div>
+            <section class="all">
+                <div class="left">
+                    <img class="all_arrow_img" src="assets/Images/left.svg" alt="leftButton"
+                        onclick="TrendingJobsGoLeft()" />
+                </div>
+                <div class="total">
+                    <h2 class="TJ-Heading">Trending Jobs</h2>
+                    <section class="Trending_Jobs scrollmenu_1">
 
 
+
+                    </section>
+
+                </div>
+                <div class="right">
+                    <img class="all_arrow_img" src="assets/Images/right.svg" alt="right"
+                        onclick="TrendingJobsGoright()" />
+                </div>
             </section>
 
-            <!-- Top workers -->
+
 
             <section>
-                <div>
+                <div class="feedback">
+                    <h2>
+                        FeedBack
+                    </h2>
 
+                    <div class="cards">
+
+                        <div class="FB-card">
+                            <img class="FB-card_img" src="assets/Images/avatar (1).svg" alt="profile">
+                            <p class="FB-card_p">I am using this application for last 10 years. This makes my life great
+                                and
+                                much easy.I
+                                earned more then my 9-5 job.now I am become a entrepreneur</p>
+
+                            <p class="review"> Rreview </p>
+
+                            <p class="stars"><img src="assets/Images/star.svg" />
+                                <img src="assets/Images/star.svg" />
+                                <img src="assets/Images/star.svg" />
+                                <img src="assets/Images/star.svg" />
+                                <img src="assets/Images/star.svg" />
+                            </p>
+                        </div>
+
+
+                        <div class="FB-card">
+                            <img class="FB-card_img" src="assets/Images/avatar (1).svg" alt="profile">
+                            <p class="FB-card_p">I am using this application for last 10 years. This makes my life great
+                                and
+                                much easy.I
+                                earned more then my 9-5 job.now I am become a entrepreneur</p>
+
+                            <p class="review"> Rreview </p>
+
+                            <p class="stars"><img src="assets/Images/star.svg" />
+                                <img src="assets/Images/star.svg" />
+                                <img src="assets/Images/star.svg" />
+                                <img src="assets/Images/star.svg" />
+                                <img src="assets/Images/star.svg" />
+                            </p>
+                        </div>
+
+
+
+                        <div class="FB-card">
+                            <img class="FB-card_img" src="assets/Images/avatar (1).svg" alt="profile">
+                            <p class="FB-card_p">I am using this application for last 10 years. This makes my life great
+                                and
+                                much easy.I
+                                earned more then my 9-5 job.now I am become a entrepreneur</p>
+
+                            <p class="review"> Rreview </p>
+
+                            <p class="stars"><img src="assets/Images/star.svg" />
+                                <img src="assets/Images/star.svg" />
+                                <img src="assets/Images/star.svg" />
+                                <img src="assets/Images/star.svg" />
+                                <img src="assets/Images/star.svg" />
+                            </p>
+                        </div>
+
+
+
+                        <div class="FB-card">
+                            <img class="FB-card_img" src="assets/Images/avatar (1).svg" alt="profile">
+                            <p class="FB-card_p">I am using this application for last 10 years. This makes my life great
+                                and
+                                much easy.I
+                                earned more then my 9-5 job.now I am become a entrepreneur</p>
+
+                            <p class="review"> Rreview </p>
+
+                            <p class="stars"><img src="assets/Images/star.svg" />
+                                <img src="assets/Images/star.svg" />
+                                <img src="assets/Images/star.svg" />
+                                <img src="assets/Images/star.svg" />
+                                <img src="assets/Images/star.svg" />
+                            </p>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
                 </div>
             </section>
 
         </section>
+        <section>
+            <div class="FUcards">
 
-        <div>
-            <div class="card">
-                <img class="card_profile_img" src="assets/Images/user-profile_img_01.avif" alt="User_profile" />
-                <h2>Ms.Ileana citaristi.</h2>
-                <p class="email"> <img src="assets/Images/email.svg" alt="email-logo"> Ileanacitaristi@gmail.com</p>
-                <p class="email"> <img src="assets/Images/phone_new.svg" alt="phone-logo"> +91 9876543210</p>
-                <p class="email"> <img src="assets/Images/location.svg" alt="location-logo"> chennai</p>
-                <p class="review"> Rreview </p>
+                <div class="FUsers">Frequent Users</div>
+                <!-- <div class="card">
+                    <img class="card_profile_img" src="assets/Images/user-profile_img_01.avif" alt="User_profile" />
+                    <h2 class="card-h2">Ms.Ileana citaristi.</h2>
+                    <p class="email"> <img src="assets/Images/email.svg" alt="email-logo"> Ileanacitaristi@gmail.com</p>
+                    <p class="email"> <img src="assets/Images/phone_new.svg" alt="phone-logo"> +91 9876543210</p>
+                    <p class="email"> <img src="assets/Images/location.svg" alt="location-logo"> chennai</p>
+                    <p class="review"> Rreview </p>
 
-                <p><img src="assets/Images/star.svg" />
-                    <img src="assets/Images/star.svg" />
-                    <img src="assets/Images/star.svg" />
-                    <img src="assets/Images/star.svg" />
-                    <img src="assets/Images/star.svg" />
-                </p>
+                    <p><img src="assets/Images/star.svg" />
+                        <img src="assets/Images/star.svg" />
+                        <img src="assets/Images/star.svg" />
+                        <img src="assets/Images/star.svg" />
+                        <img src="assets/Images/star.svg" />
+                    </p>
+
+
+                    <div class="card_details">
+                        <p class="education">Education : B.tech</p>
+                        <h2 class="domains">Domains:</h2>
+                        <h4>Web Development</h4>
+                        <h4>Web Designer</h4>
+                        <h4>Comments</h4>
+                        <h4>3 years Experience</h4>
+
+                        <button>contact</button>
+
+
+
+                    </div>
+
+                </div> -->
 
 
 
             </div>
 
-            <div class="card_details">
-                <p class="education">Education : B.tech</p>
-                <h2 class="domains">Domains:</h2>
-                <h4>Web Development</h4>
-                <h4>Web Designer</h4>
-                <h4>Comments</h4>
-
-                <button>contact</button>
+        </section>
 
 
-
-            </div>
-
-        </div>
     </main>
+
+    <footer>
+        <div>
+            <div class="logo">
+                <img src="assets/Images/Logo.png" alt="logo" />
+            </div>
+        </div>
+
+        <div class="Registered_Users">
+            <p>64,653,006<br>
+                Registered Users</p>
+        </div>
+
+        <div class="Total_Jobs_Posted">
+
+            <p>22,357,427<br>
+                Total Jobs Posted</p>
+        </div>
+
+        <div class="last">
+            <p>Apps</p>
+            <div class="apps">
+                <img src="assets/Images/icons8-instagram.svg" alt="instagram" />
+                <img src="assets/Images/icons8-twitter.svg" alt="twitter" />
+                <img src="assets/Images/icons8-facebook.svg" alt="facebook" />
+                <img src="assets/Images/icons8-youtube.svg" alt="youtube" />
+            </div>
+        </div>
+    </footer>
+    <section>
+        <div class="Copyright">
+            NeedsToBeDone ® is a registered Trademark of NTBD Technology Pty Limited.
+            Copyright © 2023 NTBD Technology Pty Limited.
+        </div>
+    </section>
 
 
     <script>
@@ -354,6 +509,49 @@
 
         ]
 
+
+        let Frequent_users = [{
+            image: {
+                "src": "assets/Images/user-profile_img_01.avif",
+                "alt": "User_profile"
+            },
+            name: "Ms.Ileana citaristi.",
+            mail: "Ileanacitaristi@gmail.com",
+            phone: "+91 9876543210",
+            location: "chennai",
+        },
+        {
+            image: {
+                "src": "assets/Images/user-profile_img_02.jfif",
+                "alt": "User_profile"
+            },
+            name: "Ms.Ileana citaristi.",
+            mail: "Ileanacitaristi@gmail.com",
+            phone: "+91 9876543210",
+            location: "chennai",
+        },
+        {
+            image: {
+                "src": "assets/Images/user-profile_img_03.jfif",
+                "alt": "User_profile"
+            },
+            name: "Ms.Ileana citaristi.",
+            mail: "Ileanacitaristi@gmail.com",
+            phone: "+91 9876543210",
+            location: "chennai",
+        },
+        {
+            image: {
+                "src": "assets/Images/user-profile_img_04.jfif",
+                "alt": "User_profile"
+            },
+            name: "Ms.Ileana citaristi.",
+            mail: "Ileanacitaristi@gmail.com",
+            phone: "+91 9876543210",
+            location: "chennai",
+        }
+        ]
+
         for (let i = 0; i < top_jobs.length; i++) {
             let JobCard = document.createElement("div");
             JobCard.setAttribute("class", "Job-Card");
@@ -549,6 +747,85 @@
 
 
         }
+
+
+
+        //  ******   Frequent Users cards   ********
+
+        for (let i = 0; i < Frequent_users.length; i++) {
+            let card = document.createElement("div");
+            card.setAttribute("class", "card");
+            card.setAttribute("data-aos", "fade-right");
+            card.innerHTML = `<img class="card_profile_img" src=${Frequent_users[i]["image"]["src"]} alt=${Frequent_users[i]["image"]["alt"]} />
+                    <h2 class="card-h2">${Frequent_users[i]["name"]}</h2>
+                    <p class="email"> <img src="assets/Images/email.svg" alt="email-logo"> ${Frequent_users[i]["mail"]}</p>
+                    <p class="email"> <img src="assets/Images/phone_new.svg" alt="phone-logo"> ${Frequent_users[i]["phone"]}</p>
+                    <p class="email"> <img src="assets/Images/location.svg" alt="location-logo"> ${Frequent_users[i]["location"]}</p>
+                    <p class="review"> Rreview </p>
+
+                    <p><img src="assets/Images/star.svg" />
+                        <img src="assets/Images/star.svg" />
+                        <img src="assets/Images/star.svg" />
+                        <img src="assets/Images/star.svg" />
+                        <img src="assets/Images/star.svg" />
+                    </p>
+
+
+                    <div class="card_details">
+                        <p class="education">Education : B.tech</p>
+                        <h2 class="domains">Domains:</h2>
+                        <h4>Web Development</h4>
+                        <h4>Web Designer</h4>
+                        <h4>Comments</h4>
+                        <h4>3 years Experience</h4>
+
+                        <button>contact</button>
+
+
+
+                    </div>
+`;
+
+            document.querySelector(".FUcards").append(card);
+
+        }
+
+
+
+
+        // let card_profile_img = document.createElement("img");
+        // card_profile_img.setAttribute("src", "assets/Images/user-profile_img_01.avif");
+        // card_profile_img.setAttribute("alt", "User_profile");
+        // card.append(card_profile_img);
+
+        // let card_h2 = document.createElement("h2");
+        // card_h2.setAttribute("class", "card-h2");
+
+
+        function goRight() {
+            document.querySelector(".scrollmenu").scrollLeft += 786;
+        }
+
+
+        function goLeft() {
+            document.querySelector(".scrollmenu").scrollLeft -= 786;
+        }
+
+        function TrendingJobsGoright() {
+            document.querySelector(".scrollmenu_1").scrollLeft += 786;
+
+        }
+
+        function TrendingJobsGoLeft() {
+            document.querySelector(".scrollmenu_1").scrollLeft -= 786;
+        }
+
+
+
+
+
+
+
 
 
 
